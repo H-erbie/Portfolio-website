@@ -118,15 +118,15 @@ export const projects = [
     id: 1,
     name: 'shopping-cart',
     img: p1,
-    code: 'https://github.com/H-erbie/React-Hoodie-Shopping-Cart',
+    code: 'https://github.com/H-erbie/herbies-hoodies',
     live: 'https://react-hoodie-shopping-cart.netlify.app',
   },
   {
     id: 2,
     name: 'music-player',
     img: p2,
-    code: 'https://github.com/H-erbie/React-music-player-Cart',
-    live: 'https://react-music-player.netlify.app',
+    code: 'https://github.com/H-erbie/React-music-player',
+    live: 'https://herbies-react-music-player.netlify.app',
   },
   {
     id: 2,
