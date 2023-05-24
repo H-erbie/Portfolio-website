@@ -132,7 +132,7 @@ export const projects = [
     id: 2,
     name: 'blog-app',
     img: p3,
-    code: 'https://github.com/H-erbie/geekBlog',
-    live: 'https://geekBlog.netlify.app',
+    code: 'https://github.com/H-erbie/blog-app',
+    live: 'https://geekblog.netlify.app',
   },
 ]

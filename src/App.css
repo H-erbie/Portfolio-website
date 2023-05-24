@@ -406,6 +406,7 @@ textarea{
   padding: 2rem;
   display: flex;
   align-items: center;
+  overflow: hidden;
   justify-content: center;}
 .about-left .profile-img, .about-left .profile-img img{
   border-radius: 1rem;
