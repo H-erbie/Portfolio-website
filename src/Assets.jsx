@@ -5,6 +5,7 @@ import {
   FaInstagram,
   FaLinkedin,
   FaFacebook,
+  FaWhatsapp,
   FaUser,
   FaTools,
   FaBriefcase,
@@ -17,6 +18,7 @@ import {
 } from "react-icons/fa";
 import p1 from './assets/images/p1.png'
 import p2 from './assets/images/p2.png'
+import p3 from './assets/images/p3.png'
 
 export const navLinks = [
   {
@@ -54,17 +56,17 @@ export const navLinks = [
 export const socials = [
   {
     id: 1,
-    url: "",
+    url: "https://www.twitter.com/ansongherbie ",
     icon: <FaTwitter />,
   },
   {
     id: 2,
-    url: "",
+    url: "https://instagram.com/her_bie__",
     icon: <FaInstagram />,
   },
   {
     id: 3,
-    url: "",
+    url: "https://www.github.com/h-erbie",
     icon: <FaGithub />,
   },
   {
@@ -74,8 +76,13 @@ export const socials = [
   },
   {
     id: 5,
-    url: "",
+    url: "https://www.facebook.com/profile.php?id=100058721127259",
     icon: <FaFacebook />,
+  },
+  {
+    id: 5,
+    url: "https://wa.me/233553187203",
+    icon: <FaWhatsapp />,
   },
 ];
 export const langs = [
@@ -109,16 +116,23 @@ export const langs = [
 export const projects = [
   {
     id: 1,
-    name: 'react-hoodie-shopping-cart',
+    name: 'shopping-cart',
     img: p1,
     code: 'https://github.com/H-erbie/React-Hoodie-Shopping-Cart',
     live: 'https://react-hoodie-shopping-cart.netlify.app',
   },
   {
     id: 2,
-    name: 'react-music-player',
+    name: 'music-player',
     img: p2,
     code: 'https://github.com/H-erbie/React-music-player-Cart',
     live: 'https://react-music-player.netlify.app',
+  },
+  {
+    id: 2,
+    name: 'blog-app',
+    img: p3,
+    code: 'https://github.com/H-erbie/geekBlog',
+    live: 'https://geekBlog.netlify.app',
   },
 ]

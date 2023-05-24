@@ -20,6 +20,7 @@ const Projects = () => {
                   <button className="btn code">Source code🐈</button>
                 </a>
               </div>
+              <p className='project-name'>{name}</p>
             </article>
           );
         })}

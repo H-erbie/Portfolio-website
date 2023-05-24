@@ -329,8 +329,12 @@ textarea{
 }
 .logo{
   font-size: 1.3rem;
-  letter-spacing: 0.8rem;
+  letter-spacing: 0.6rem;
   color: var(--light-gray);
+}
+.project-name{
+  color: var(--color-bg-variant);
+  text-align: center;
 }
 .switch{
   font-size: 2.5rem;
@@ -463,6 +467,13 @@ textarea{
   width: 300px;
   height: 200px;
 }
+.col-more .project-overlay{
+  height: 150px;
+}
+.col-more .live, .col-more .code{
+  font-size: 0.8rem;
+}
+
 .project{
   overflow: hidden;
   width: 400px;

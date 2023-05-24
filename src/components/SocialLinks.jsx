@@ -8,7 +8,7 @@ const SocialLinks = () => {
         {socials.map((link) => {
           const { id, url, icon } = link;
           return (
-            <a href={url} key={id} className="social-link">
+            <a href={url} target='_blank' key={id} className="social-link">
               {icon}
             </a>
           );
