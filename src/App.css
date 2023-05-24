@@ -86,6 +86,7 @@ section{
   align-items: center;
   justify-content: center;
   transition: var(--transition);
+  overflow:hidden;
 }
 .skill:hover{
   background-color: rgba(0,0,0,0.2);
@@ -541,6 +542,7 @@ textarea{
 .profile-img{
   width: 320px;
   height: 320px;
+  overflow: hidden;
 }
 .resume{
   font-size: 0.8rem;
