@@ -71,7 +71,7 @@ export const socials = [
   },
   {
     id: 4,
-    url: "",
+    url: "https://www.linkedin.com/in/herbert-koranteng-1661231b2?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BaoFVc63KT%2FSlqRbBwW2v0A%3D%3D",
     icon: <FaLinkedin />,
   },
   {
@@ -133,6 +133,6 @@ export const projects = [
     name: 'blog-app',
     img: p3,
     code: 'https://github.com/H-erbie/blog-app',
-    live: 'https://geekblog.netlify.app',
+    live: 'https://geekbloggeek.netlify.app',
   },
 ]
