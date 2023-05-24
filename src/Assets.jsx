@@ -118,8 +118,8 @@ export const projects = [
     id: 1,
     name: 'shopping-cart',
     img: p1,
-    code: 'https://github.com/H-erbie/herbies-hoodies',
-    live: 'https://react-hoodie-shopping-cart.netlify.app',
+    code: 'https://github.com/H-erbie/React-Hoodie-shopping-c\Cart',
+    live: 'https://herbies-hoodies.netlify.app',
   },
   {
     id: 2,
