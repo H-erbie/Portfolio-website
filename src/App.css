@@ -88,6 +88,8 @@ section{
   justify-content: center;
   transition: var(--transition);
   overflow:hidden;
+  padding: 0.5rem;
+  border-radius: 1rem;
 }
 .skill:hover{
   background-color: rgba(0,0,0,0.2);
@@ -96,7 +98,7 @@ section{
   color: var(--color-green-gray);
 }
 .skill-icon{
-  font-size: 5rem;
+  font-size: 4rem;
 }
 .nav-container{
   width: 100%;
@@ -131,9 +133,7 @@ section{
 .show-sidemenu{
   right: 0;
 }
-.turnBars{
-  transform: rotate(360deg);
-}
+
 .topbar-right{
   display: flex;
   gap: 2rem;
@@ -489,6 +489,8 @@ textarea{
   height: 300px;
   height: auto;
   position: relative;
+  border-radius: 1rem;
+  background-color: var(--color-gray);
 }
 .project img{
   width: 100%;

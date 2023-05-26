@@ -9,13 +9,13 @@ import {
   FaUser,
   FaTools,
   FaBriefcase,
-  FaMailBulk,
   FaHtml5,
   FaReact,
   FaJs,
   FaSass,
   FaCss3,
 } from "react-icons/fa";
+import {AiFillMail} from "react-icons/ai";
 import p1 from './assets/images/p1.png'
 import p2 from './assets/images/p2.png'
 import p3 from './assets/images/p3.png'
@@ -47,7 +47,7 @@ export const navLinks = [
     id: 5,
     url: "contact",
 
-    icon: <FaMailBulk />,
+    icon: <AiFillMail />,
   },
 ];
 
