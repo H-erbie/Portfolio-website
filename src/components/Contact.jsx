@@ -6,9 +6,6 @@ import emailjs from "@emailjs/browser";
 const Contact = () => {
   const formRef = useRef();
   const [done, setDone] = useState(false);
-  const [message, setMessage] = useState("");
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
   useEffect(() => {
     if (done) {
       let timer = setTimeout(() => {
@@ -36,9 +33,10 @@ const Contact = () => {
           console.log(error.text);
         }
       );
-    setEmail("");
-    setMessage("");
-    setName("");
+    e.target[0].value = '';
+    e.target[1].value = '';
+    e.target[2].value = '';
+    
   };
   return (
     <section id="contact" className="sp-section">
@@ -60,8 +58,7 @@ const Contact = () => {
                 id="name"
                 placeholder="Enter your name"
                 name="user_name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
+                
               />
             </div>
             <div className="form-entity">
@@ -71,16 +68,12 @@ const Contact = () => {
                 name="user_email"
                 id="email"
                 placeholder="Enter your email address"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
           </article>
           <article className="form-bottom">
             <label htmlFor="message">Your Message</label>
             <textarea
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
               name="message"
               placeholder="Get it off your chest"
             ></textarea>
