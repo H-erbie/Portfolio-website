@@ -6,19 +6,22 @@ import emailjs from "@emailjs/browser";
 const Contact = () => {
   const formRef = useRef();
   const [done, setDone] = useState(false);
-  
-  useEffect(()=>{
-    if(done){
-    let timer = setTimeout(()=>{
-      setDone(false)
-    }, 3000);
-    return () =>  clearTimeout(timer)
-  }
-  },[done])
+  const [message, setMessage] = useState("");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  useEffect(() => {
+    if (done) {
+      let timer = setTimeout(() => {
+        setDone(false);
+      }, 3000);
+      return () => clearTimeout(timer);
+    }
+  }, [done]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs.sendForm(
+    emailjs
+      .sendForm(
         "service_iqs6bix",
         "template_oxw67zq",
         formRef.current,
@@ -27,14 +30,15 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
-          setDone(true)
-          
+          setDone(true);
         },
         (error) => {
           console.log(error.text);
         }
       );
-      
+    setEmail("");
+    setMessage("");
+    setName("");
   };
   return (
     <section id="contact" className="sp-section">
@@ -51,7 +55,14 @@ const Contact = () => {
           <article className="form-top">
             <div className="form-entity">
               <label htmlFor="name">Your Name</label>
-              <input type="text" id="name" placeholder="Enter your name" name="user_name"/>
+              <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+                name="user_name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
             </div>
             <div className="form-entity">
               <label htmlFor="email">Your Email Address</label>
@@ -60,19 +71,25 @@ const Contact = () => {
                 name="user_email"
                 id="email"
                 placeholder="Enter your email address"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
           </article>
           <article className="form-bottom">
             <label htmlFor="message">Your Message</label>
             <textarea
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
               name="message"
               placeholder="Get it off your chest"
             ></textarea>
           </article>
           <div className="bottom-bottom">
-          <button className="btn send" type="submit" >Launch message🚀</button>
-          {done ? <p className="launched">Message launched!</p>: ''}
+            <button className="btn send" type="submit">
+              Launch message🚀
+            </button>
+            {done ? <p className="launched">Message launched!</p> : ""}
           </div>
         </Fade>
       </form>
