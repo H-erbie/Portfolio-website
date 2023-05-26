@@ -1,7 +1,11 @@
 import React from "react";
 import profileImg from "../assets/images/mee.jpg";
+import { Fade} from "react-awesome-reveal";
+
 const Header = () => {
   return (
+    <Fade cascade damping={0.5} triggerOnce fraction={0} delay={1000} duration={1000}>
+
     <section id="home">
       <div className="home-intro">
         <p className="brief-intro">Hi, I'm</p>
@@ -14,7 +18,10 @@ const Header = () => {
           <img src={profileImg} alt="Herbert Ansong Koranteng" />
         </div>
       </div>
+
     </section>
+    </Fade>
+
   );
 };
 

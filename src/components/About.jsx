@@ -1,16 +1,20 @@
 import React from "react";
 import { useGlobalContext } from "../Contex";
 import img from "../assets/images/me2.jpg";
+import {Fade} from "react-awesome-reveal";
 
 const About = () => {
   return (
+    <>
     <section id="about" className="sp-section">
       <h2 className="sub-head">About me</h2>
       <article className="about-sections">
-        <div className="about-left">
+      <Fade cascade damping={0.5} triggerOnce fraction={0} delay={1000} duration={1000}>
+          <div className="about-left">
           <div className="profile-img">
           <img src={img} alt="Herbert Ansong Koranteng" />
           </div>
+          
         </div>
         <div className="about-right">
           <p className="about-info">
@@ -28,9 +32,12 @@ const About = () => {
           </ul>
           </div>
         </div>
+        </Fade>
+
       </article>
     </section>
-  );
+
+    </>  );
 };
 
 export default About;
