@@ -4,7 +4,6 @@ import { Fade} from "react-awesome-reveal";
 
 const Header = () => {
   return (
-    <Fade cascade damping={0.5} triggerOnce fraction={0} delay={1000} duration={1000}>
 
     <section id="home">
       <div className="home-intro">
@@ -20,7 +19,6 @@ const Header = () => {
       </div>
 
     </section>
-    </Fade>
 
   );
 };

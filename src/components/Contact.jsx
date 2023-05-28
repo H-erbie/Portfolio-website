@@ -33,23 +33,14 @@ const Contact = () => {
           console.log(error.text);
         }
       );
-    e.target[0].value = '';
-    e.target[1].value = '';
-    e.target[2].value = '';
+   
     
   };
   return (
     <section id="contact" className="sp-section">
       <h2 className="sub-head">Get in touch!</h2>
       <form className="contact-form" ref={formRef} onSubmit={handleSubmit}>
-        <Fade
-          cascade
-          damping={0.2}
-          triggerOnce
-          fraction={0}
-          delay={1000}
-          duration={1000}
-        >
+       
           <article className="form-top">
             <div className="form-entity">
               <label htmlFor="name">Your Name</label>
@@ -84,7 +75,6 @@ const Contact = () => {
             </button>
             {done ? <p className="launched">Message launched!</p> : ""}
           </div>
-        </Fade>
       </form>
     </section>
   );

@@ -8,7 +8,6 @@ const Projects = () => {
     <section id="projects" className="sp-section">
       <h2 className="sub-head">Projects</h2>
       <div className={projects.length > 2 ? 'projects col-more' : 'projects'}>
-      <Fade cascade damping={0.5} triggerOnce fraction={0} delay={1000} duration={1000}>
 
         {projects.map((item) => {
           const { id, img, code, live, name } = item;
@@ -27,7 +26,6 @@ const Projects = () => {
             </article>
           );
         })}
-                </Fade>
 
       </div>
     </section>

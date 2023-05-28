@@ -9,7 +9,6 @@ const About = () => {
     <section id="about" className="sp-section">
       <h2 className="sub-head">About me</h2>
       <article className="about-sections">
-      <Fade cascade damping={0.5} triggerOnce fraction={0} delay={1000} duration={1000}>
           <div className="about-left">
           <div className="profile-img">
           <img src={img} alt="Herbert Ansong Koranteng" />
@@ -32,7 +31,6 @@ const About = () => {
           </ul>
           </div>
         </div>
-        </Fade>
 
       </article>
     </section>
